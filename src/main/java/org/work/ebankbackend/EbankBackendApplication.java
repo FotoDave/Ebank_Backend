@@ -36,7 +36,7 @@ public class EbankBackendApplication {
     @Bean
     CommandLineRunner commandLineRunner(BankAccountService bankAccountService){
         return args ->{
-            Stream.of("Dave","Wallace","Maria").forEach(name->{
+            Stream.of("Dave","Debora","Maria").forEach(name->{
                 CustomerDTO customer = new CustomerDTO();
                 customer.setName(name);
                 customer.setEmail(name+"@gmail.com");
